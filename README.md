@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en" class="">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
@@ -750,3 +746,27 @@
   </body>
 </html>
 
+=======
+FINAL PROJECT
+======
+Brief
+======
+Our website will feature 4 San Francisco attractions using parallax scroll animation. Each section will have a link/button that goes to a separate page in which more information of the attraction is introduced. On each more info page, there will be a button that leads user back to our main page.
+
+Project Roadmap
+======
+WEEK 10
+-----
+- Compile website inspirations; 
+- Figure out how to make the website (methods, plugins etc.); 
+- Moodboard; 
+- Sketches; 
+- Typeface;
+
+WEEK 11
+------
+- Adam- create wireframes for our site (landing page and inner page) and update us By EOD Friday.
+- Ben- create an icon set that describes each tourist attraction, and buttons. Please give us an update by EOD Friday.
+- Ulrica- create illustrations of 4 attractions and share 2 by Friday or Saturday.
+- Sun Dai- replace the landing image (golden gate bridge) and figure out responsiveness of this parallax scroll animation thing. Once I receive any updates I will update the page accordingly. I will also research on navigation functionalities (click to navigate to a specific section etc).
+>>>>>>> ddf8ab97a0eda2f59c246b7a87faf983a65e5736
