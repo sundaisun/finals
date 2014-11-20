@@ -8,12 +8,17 @@
   z-index: 9999; }
 
 section {
-  height: 4000px;
-  width: 1280px;
-  margin: 0 auto; }
+  height: 4000px; }
 
-#slide-1 {
-  position: relative; }
+#slide-1 .bg {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/landing.gif);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0; }
 
 #slide-1 #title {
   width: 600px;
