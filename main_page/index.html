@@ -7,42 +7,56 @@
 </head>
 <body>
     <div id="position-log">0</div>
+    <div class="project-wrap">
+    <div class="skrollr-wrapper">
+    <section id="slide-0">
+         <div class="slide-container">
+            <div class="bg"
+                data-top="opacity:1;"
+                data--1400-top="opacity:0;"
+                data-anchor-target="#slide-0"
+            ></div>
+            <div id="title"
+            data-top="transform:translateY(0px)"
+            data--550-top="transform:translateY(-500px)"
+            data-anchor-target="#slide-0"
+            ><p>Fog of</p><h1>San Francisco</h1></div>
+        </div><!--slide container-->
+    </section>
     <section id="slide-1">
-        <div class="bg"></div>
-        <div id="title"
-        data-top="transform:translateY(0px)"
-        data--550-top="transform:translateY(-500px)"
-        data-anchor-target="#slide-1"
-        >Fog of San Francisco</div>
-        <div id="coit"
-            data-top="opacity:0; transform:translateY(1000px)"
-            data--1400-top="opacity:1; transform:translateY(0px)"
-            data-3500="opacity:1; transform:translateY(0px)"      
-            data-4000="opacity:1; transform:translateY(-1000px)"
-            data-anchor-target="#slide-1"
-        ></div>
-        <div class="fog-1"
-            data-1124="opacity:0; transform:translateX(400px)"
-            data-2000="opacity:1; transform:translateX(-700px)"
-            data-3500="opacity:1; transform:translateX(-700px)"
-            data-4000="opacity:0; transform:translateX(-1400px)"
-            data-anchor-target="#slide-1"
-        ><img src="lib/images/cloud1.png"></div>
-        <div class="fog-2"
-            data-1600="opacity:0; transform:translateX(-400px)"
-            data-2200="opacity:1; transform:translateX(500px)"
-            data-3500="opacity:1; transform:translateX(500px)"
-            data-3800="opacity:1; transform:translateX(1500px)"
-            data-anchor-target="#slide-1"><img src="lib/images/cloud2.png"></div>
-        <div class="text"
-            data-2300="opacity:0; transform:translateX(0px)"
-            data-2500="opacity:1; transform:translateX(200px)"
-            data-3500="opacity:1; transform:translateX(200px)"
-            data-3800="opacity:0"
-            data-anchor-target="#slide-1">
-            <h1>Some text</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque tempor sem in consequat. Fusce facilisis vestibulum arcu vitae eleifend. Donec ac felis urna.</p>
-        </div>
+       <div class="slide-container">
+        <div class="slide row">
+            <div id="coit"
+                data-top="opacity:0; transform:translateY(1000px)"
+                data--1400-top="opacity:1; transform:translateY(0px)"
+                data-3500="opacity:1; transform:translateY(0px)"      
+                data-4000="opacity:1; transform:translateY(-1000px)"
+                data-anchor-target="#slide-0"
+            ></div>
+            <div class="fog-1"
+                data-1124="opacity:0; transform:translateX(400px)"
+                data-2000="opacity:1; transform:translateX(-700px)"
+                data-3500="opacity:1; transform:translateX(-700px)"
+                data-4000="opacity:0; transform:translateX(-1400px)"
+                data-anchor-target="#slide-0"
+            ><img src="lib/images/cloud1.png"></div>
+            <div class="fog-2"
+                data-1600="opacity:0; transform:translateX(-400px)"
+                data-2200="opacity:1; transform:translateX(500px)"
+                data-3500="opacity:1; transform:translateX(500px)"
+                data-3800="opacity:1; transform:translateX(1500px)"
+                data-anchor-target="#slide-0"><img src="lib/images/cloud2.png"></div>
+            <div class="text col-xs-4"
+                data-2300="opacity:0; transform:translateX(0px)"
+                data-2500="opacity:1; transform:translateX(200px)"
+                data-3500="opacity:1; transform:translateX(200px)"
+                data-3800="opacity:0"
+                data-anchor-target="#slide-0">
+                <h1>Some text</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque tempor sem in consequat. Fusce facilisis vestibulum arcu vitae eleifend. Donec ac felis urna.</p>
+            </div>
+        </div><!--slide-->
+        </div><!--slide-container-->
     </section><!--section 1-->
     <section id="slide-2">
         <div class="bg"></div>
@@ -67,6 +81,8 @@
             <h1>Some text</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque tempor sem in consequat. Fusce facilisis vestibulum arcu vitae eleifend. Donec ac felis urna.</p></div>
     </section>
+    </div><!--scrollr-wrapper-->
+    </div><!--project wrap-->
     <script src="lib/js/jquery-1.11.1.min.js"></script>
     <script src="lib/js/skrollr.min.js"></script>
     <script>

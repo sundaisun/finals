@@ -1,0 +1,19 @@
+@include container-make;
+@include columns-make;
+@include column-make;
+@include offset-make;
+
+.row{
+    margin-left: -($gutter-size / 2);
+    margin-right: - ($gutter-size / 2);
+    @extend .clearfix;
+}
+
+
+@each $prefix, $prevalue in $container-width{ //prefix and prevalue are self-defined and it reads the key and value of the array
+    @media (min-width: $prevalue){
+        @include container-make(#{$prefix});
+        @include columns-make(#{$prefix});
+        @include offset-make;
+    }
+}

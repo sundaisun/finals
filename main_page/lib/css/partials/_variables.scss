@@ -1,0 +1,42 @@
+//variabe is predefined name value
+//typefaces
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+$gutter-size: 1rem;
+//root em (rem) is always relative to the default
+$column-length: 12;
+
+//SASS MAP, named indexes
+$container-width:(
+    xs:0,
+    sm:480px,
+    md:640px,
+    lg:960px,
+    xl:1200px
+);
+
+//Sass list (linear array)
+$size-shortnames:("xs","sm","md","lg","xl");
+
+////map-get($container-width,"xs");
+// $container-xl: 1200px;
+// $container-lg: 1000px;
+// $container-md: 800px;
+// $container-sm: 640px;
+// $container-xs: map-get($container-width,"xs");
+
+
+$color-cream:#edebe6;
+$color-lime:#d6e1c7;
+$color-teal:#94c7b6;
+$color-black:#403b33;
+$color-red:#d3643b;
+
+//colors by function
+$color-overlay:$color-black;
+$color-warning: saturate($color-red,15%);
+$color-confirm: saturate($color-teal,15%);
+
+$font-main:'Lato', sans-serif;
+$font-heading:'Cabin Condensed', sans-serif;

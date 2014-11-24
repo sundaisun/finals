@@ -1,0 +1,111 @@
+/* @mixin center-in-parent{
+    margin-left:auto;
+    margin-right:auto;
+} */
+//classes specs
+/* .container{
+	width:$container-xl;
+	@include center-in-parent;
+} */
+
+//.c-lg{width:$container-lg};
+//.c-md{width:$container-md};
+//.c-sm{width:$container-sm};
+//.c-xs{width:$container-xs};
+
+
+/*============Nesting classes============*/
+// .btn{
+//     somestyle:astyle;
+      // outline:0; //take off random blue highlight when you click the button
+//     &-xs{
+//         somestyle:xsbuttonstyle;
+//     }
+// }
+
+/*============BUTTON CLASSES============*/
+.btn-dark{
+    @include button($color-black);}
+.btn-light{
+    @include button($color-cream);
+    &:hover>a{
+        color:invert($color-cream);
+        text-shadow:none;
+    }}
+.btn-red{
+    @include button($color-red);}
+.btn-teal{
+    @include button($color-teal);}
+.btn-lime{
+    @include button($color-lime);}
+.btn-red-round{
+    @include button-round($color-red);}
+.btn-teal-round{
+    @include button-round($color-teal);}
+.btn-lime-round{
+    @include button-round($color-lime);}
+.btn-dark-round{
+    @include button-round($color-black);}
+.btn-light-round{
+    @include button-round($color-cream);
+    &:hover>a{
+        color:invert($color-cream);
+        text-shadow:none;
+    }}
+.btn-red-solid{
+    @include button-solid($color-red);}
+.btn-teal-solid{
+    @include button-solid($color-teal);}
+.btn-lime-solid{
+    @include button-solid($color-lime);}
+.btn-light-solid{
+    @include button-solid($color-cream);}
+.btn-dark-solid{
+    @include button-solid($color-black);}
+.btn-confirm{
+    @include button-solid($color-confirm);}
+.btn-warning{
+    @include button-solid($color-warning);}
+
+.compact{
+    list-style-type: none;
+    margin-top:0;
+    margin-bottom:0;
+    padding-left:0;
+}
+
+.clearfix:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.nav{
+    & > ul{ //select the immediate child ul of .nav
+        @extend .compact; //DO NOT extend into media query, you can use a mixin in media query
+    }
+   
+    ul li a{
+        display:block;
+        background-color:transparent;
+        text-transform:uppercase;
+        color: white;
+        float:left;
+        margin-right:20px;
+        @include ease-in-out();
+        padding-bottom:5px;
+        border-bottom:solid 2px rgba(255,255,255,0);
+    &:hover{
+        border-bottom:solid 2px rgba(255,255,255,1);
+        }
+         }
+    .active a{
+        color:darken($color-lime,1%);
+        text-shadow:0px 0px 3px lighten($color-black,15%);
+    }
+}
+
+.centered{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;}
