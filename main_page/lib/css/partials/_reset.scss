@@ -104,11 +104,11 @@ figcaption{
     @include gradient;
     @include ease-in-out(0.3s);
     h1{
-        color:$color-cream;
+        color:white;
         text-transform: uppercase;
 }
     p{
-        color:lighten($color-cream,10%);
+        color:lighten(white,10%);
         margin-bottom:10%;
         margin-left:auto;
         margin-right:auto;
