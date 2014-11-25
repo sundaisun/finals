@@ -6,6 +6,22 @@
     <link rel="stylesheet" href="lib/css/style.css">
 </head>
 <body>
+   <nav class="menu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="#home">Menu</a></h1>
+			<i class="icon-remove menu-close"></i>
+			<a href="#slide-0">Home</a>
+			<a href="#alamo">Alamo Square</a>
+			<a href="#coit">Coit Tower</a>
+			<a href="#union">Union Square</a>
+			<a href="#embarcadero">Embarcadero</a>
+			<a href="#about">About</a>
+		</div>
+
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
+
     <div id="position-log">0</div>
     <div class="project-wrap">
     <div class="skrollr-wrapper">
@@ -89,6 +105,14 @@
                 $('#position-log').text(data.curTop);
             }
         });
+    </script>
+    <script>
+    // Menu settings
+			$('#menuToggle, .menu-close').on('click', function(){
+				$('#menuToggle').toggleClass('active');
+				$('body').toggleClass('body-push-toleft');
+				$('.menu').toggleClass('menu-open');
+			});
     </script>
 </body>
 </html>
