@@ -110,50 +110,37 @@ section {
     margin-top:20%;
 }
 
-//#slide-1 .text{
-//    z-index:5;
-//    color:white;
-//    position:fixed;
-//    top:20%;
-//}
-
 //Slide 2
-#slide-2 #twin{
+#slide-2 #embarcadero{
     width:100%;
     height:100%;
-    background:url(../images/twin.png) no-repeat;
+    background:url(../images/embarcadero.gif) no-repeat;
     background-size:contain;
+    background-color:$embarcadero-green;
     position:fixed;
+    background-position:bottom;
+    background-repeat:no-repeat;
     top:0;
     left:0;
     z-index:6;
 }
 
 #slide-2 .fog-1{
-    width:700px;
-    height:800px;
+    width:625px;
+    height:123px;
     position:fixed;
-    top:20%;
+    top:6%;
     right:0;
     z-index:7;
 }
 
 #slide-2 .fog-2{
-    width:700px;
-    height:800px;
+   width:658px;
+    height:232px;
     position:fixed;
-    top:55%;
+    top:50%;
     left:0;
     z-index:8;
 }
-
-#slide-2 .text{
-    width:500px;
-    position:fixed;
-    top:20%;
-    left:40%;
-    z-index:9;
-}
-
 
 

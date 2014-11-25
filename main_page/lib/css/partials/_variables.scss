@@ -29,14 +29,9 @@ $size-shortnames:("xs","sm","md","lg","xl");
 
 $ggb-orange:rgb(239, 119, 0);
 $alamo-blue:#0069DB;
-$color-teal:#94c7b6;
-$color-black:#403b33;
-$color-red:#d3643b;
+$embarcadero-green:#74A08F;
 
-//colors by function
-$color-overlay:$color-black;
-$color-warning: saturate($color-red,15%);
-$color-confirm: saturate($color-teal,15%);
+
 
 $font-main:'Lato', sans-serif;
 $font-heading:'Cabin Condensed', sans-serif;
