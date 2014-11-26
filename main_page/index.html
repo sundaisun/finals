@@ -117,6 +117,15 @@
 				$('body').toggleClass('body-push-toleft');
 				$('.menu').toggleClass('menu-open');
 			});
+    // Smooth scrolling
+            var $root = $('html, body');
+            $('a').click(function() {
+            $root.animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+                }, 1000
+                );
+    return false;
+});
     </script>
 </body>
 </html>
