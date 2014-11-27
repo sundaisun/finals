@@ -113,7 +113,7 @@
     <script>
     // Menu settings
 			$('#menuToggle').on('click', function(){
-				$('#menuToggle').toggleClass('active');
+				$('#menuToggle').hide();
 				$('body').toggleClass('body-push-toleft');
 				$('.menu').toggleClass('menu-open');
 			});
@@ -122,7 +122,7 @@
             $('a').click(function() {
             $root.animate({
                 scrollTop: $( $.attr(this, 'href') ).offset().top
-                }, 1000
+                }, 1500
                 );
     return false;
 });
