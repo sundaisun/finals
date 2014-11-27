@@ -21,9 +21,8 @@ WEEK 11
 - Ben- create an icon set that describes each tourist attraction, and buttons. Please give us an update by EOD Friday.
 - Ulrica- create illustrations of 4 attractions and share 2 by Friday or Saturday.
 - Sun Dai- replace the landing image (golden gate bridge) and figure out responsiveness of this parallax scroll animation thing. Once I receive any updates I will update the page accordingly. I will also research on navigation functionalities (click to navigate to a specific section etc).
-- 
 
 WEEK 12
 ------
--Animated gif for the fog, background cover.
--Building/landmark graphic make on a seperate layer as transparent PNG.
+- Animated gif for the fog, background cover.
+- Building/landmark graphic make on a seperate layer as transparent PNG.
