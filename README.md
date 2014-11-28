@@ -5,7 +5,7 @@ FINAL PROJECT
 - **_old**: all previous testing pages
 - **fog**: most up-to-date files
 - **source-files**: illustrations, wireframe etc.
-Please follow folder structure when you update. Thank you.
+- *Please follow folder structure when you update. Thank you.*
 
 Brief
 ======
