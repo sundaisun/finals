@@ -1,6 +1,12 @@
 =======
 FINAL PROJECT
 ======
+*Folder Structure* 
+- **_old**: all previous testing pages
+- **fog**: most up-to-date files
+- **source-files**: illustrations, wireframe etc.
+Please follow folder structure when you update. Thank you.
+
 Brief
 ======
 Our website will feature 4 San Francisco attractions using parallax scroll animation. Each section will have a link/button that goes to a separate page in which more information of the attraction is introduced. On each more info page, there will be a button that leads user back to our main page.
