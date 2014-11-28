@@ -1,4 +1,3 @@
-=======
 FINAL PROJECT
 ======
 *Folder Structure* 
