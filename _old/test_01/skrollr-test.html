@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skrollr Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="position-log">0</div>
+    <section id="slide-1">
+        <div class="bg"></div>
+        <div id="title"
+        data-top="transform:translateY(0px)"
+        data--550-top="transform:translateY(-500px)"
+        data-anchor-target="#slide-1"
+        >Fog of San Francisco</div>
+        <div id="coit"
+            data-top="opacity:0"
+            data--600-top="opacity:1"
+            data-anchor-target="#slide-1"
+        ></div>
+        <div id="fog-1"
+            data-top="opacity:0; transform:translateX(0px)"
+            data--1600-top="opacity:1; transform:translateX(-800px)"
+            data-anchor-target="#slide-1"
+        ><img src="cloud1.png"></div>
+        <div id="fog-2"
+            data-top="opacity:0; transform:translateX(0px)"
+            data--1850-top="opacity:1; transform:translateX(1000px)"
+            data-anchor-target="#slide-1"><img src="cloud2.png"></div>
+        <div class="text"
+            data-1850="opacity:0; transform:translateX(0px)"
+            data--2150-top="opacity:1; transform:translateX(200px)"
+            data-anchor-target="#slide-1">
+            <h1>Some text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque tempor sem in consequat. Fusce facilisis vestibulum arcu vitae eleifend. Donec ac felis urna.</p>
+        </div>
+    </section>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init({
+            render: function(data){
+                //log current scroll position
+                $('#position-log').text(data.curTop);
+            }
+        });
+    </script>
+</body>
+</html>
