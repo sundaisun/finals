@@ -226,6 +226,17 @@ figcaption {
   #menuToggle:hover {
     background: rgba(0, 0, 0, 0.2); }
 
+#close {
+  position: absolute;
+  top: 20px;
+  left: 58%;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 700;
+  cursor: pointer; }
+  #close:hover {
+    color: rgba(255, 255, 255, 0.8); }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -869,6 +880,18 @@ section {
 .bg-image {
   min-width: 700px; }
 
+.text {
+  display: inline-block;
+  width: 500px;
+  margin-top: 15%; }
+
+.landmark {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
 .slide-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -903,9 +926,9 @@ section {
 #slide-1 #alamo {
   width: 100%;
   height: 100%;
-  background: url(../images/alamo.gif) no-repeat;
-  background-color: #0069DB;
-  background-size: contain;
+  background: url(../images/fog.gif) no-repeat;
+  background-color: #f8f8f8;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   position: fixed;
@@ -920,30 +943,24 @@ section {
   width: 625px;
   height: 123px;
   position: fixed;
-  top: 10%;
+  top: 60%;
   right: 0;
   z-index: 3; }
 
 #slide-1 .fog-2 {
-  width: 658px;
-  height: 232px;
+  width: 519px;
+  height: 111px;
   position: fixed;
   top: 55%;
   left: 0;
   z-index: 4; }
 
-.text {
-  color: white;
-  display: inline-block;
-  width: 500px;
-  margin-top: 20%; }
-
 #slide-2 #embarcadero {
   width: 100%;
   height: 100%;
-  background: url(../images/embarcadero.gif) no-repeat;
+  background: url(../images/fog.gif) no-repeat;
   background-size: contain;
-  background-color: #74A08F;
+  background-color: #f8f8f8;
   position: fixed;
   background-position: bottom;
   background-repeat: no-repeat;

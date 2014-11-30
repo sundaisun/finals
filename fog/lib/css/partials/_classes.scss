@@ -110,3 +110,16 @@
         background: rgba(0,0,0,0.2);
     }
 }
+
+#close{
+    position:absolute;
+    top:20px;
+    left:58%;
+    color:#fff;
+    font-size:1.3em;
+    font-weight: 700;
+    cursor:pointer;
+    &:hover{
+        color:rgba(white,0.8);
+    }
+}

@@ -9,6 +9,7 @@
    <nav class="menu">
 		<div class="menu-wrap">
 			<h1 class="logo"><a href="#slide-0">Fog of SF</a></h1>
+			<div id="close">x</div>
 			<a href="#alamo">Alamo Square</a>
 			<a href="#embarcadero">Embarcadero</a>
 			<a href="#coit">Coit Tower</a>
@@ -50,6 +51,9 @@
                 <h1>Some text</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque tempor sem in consequat. Fusce facilisis vestibulum arcu vitae eleifend. Donec ac felis urna.</p>
                 </div><!--text-->
+               <div class="landmark">
+                 <img src="lib/images/alamo-new.png" alt="alamo">
+               </div><!--landmark-->
             </div>
             <div class="fog-1"
                 data-580="opacity:0; transform:translateX(300px)"
@@ -81,6 +85,9 @@
                 <h1>Some text</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque tempor sem in consequat. Fusce facilisis vestibulum arcu vitae eleifend. Donec ac felis urna.</p>
                 </div><!--text-->
+                <div class="landmark">
+                 <img src="lib/images/embacadero.png" alt="embarcadero">
+               </div><!--landmark-->
             </div>
             <div class="fog-1"
                 data-1700="opacity:0; transform:translateX(300px)"
@@ -117,6 +124,11 @@
 				$('body').toggleClass('body-push-toleft');
 				$('.menu').toggleClass('menu-open');
 			});
+            $('#close').click(function(){
+                $('#menuToggle').show();
+                $('body').toggleClass('body-push-toleft');
+				$('.menu').toggleClass('menu-open');
+            })
     // Smooth scrolling
             var $root = $('html, body');
             $('a').click(function() {
