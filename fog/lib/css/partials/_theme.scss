@@ -75,7 +75,6 @@ section {
     text-transform: uppercase;
     position:absolute;
     margin-top:20%;
-    color:#fff;
     font-size:48px;
     line-height:1.6em;
 }
@@ -176,11 +175,11 @@ section {
 }
 
 #slide-3 .item{
-    width:307px;
-    height:407px;
+    width:414px;
+    height:524px;
     position:fixed;
-    bottom:0;
-    left:69%;
+    bottom:-30px;
+    left:60%;
     z-index:30;
 }
 

@@ -112,7 +112,7 @@ figcaption {
   /* IE10+ */
   background: linear-gradient(to bottom, rgba(64, 59, 51, 0.98) 0%, rgba(67, 55, 48, 0.98) 12%, rgba(88, 29, 28, 0.62) 88%, rgba(91, 25, 25, 0.62) 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa403b33', endColorstr='#9e5b1919',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa403b33', endColorstr='#9e5b1919',GradientType=0 );
   /* IE6-9 */
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -924,7 +924,6 @@ section {
   text-transform: uppercase;
   position: absolute;
   margin-top: 20%;
-  color: #fff;
   font-size: 48px;
   line-height: 1.6em; }
 
@@ -1011,11 +1010,11 @@ section {
   z-index: 6; }
 
 #slide-3 .item {
-  width: 307px;
-  height: 407px;
+  width: 414px;
+  height: 524px;
   position: fixed;
-  bottom: 0;
-  left: 69%;
+  bottom: -30px;
+  left: 60%;
   z-index: 30; }
 
 #slide-3 .fog-1 {
@@ -1033,5 +1032,3 @@ section {
   top: 40%;
   left: 0;
   z-index: 8; }
-
-/*# sourceMappingURL=style.css.map */

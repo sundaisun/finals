@@ -31,3 +31,11 @@ WEEK 12
 ------
 - Animated gif for the fog, background cover.
 - Building/landmark graphic make on a seperate layer as transparent PNG.
+
+WEEK 13
+------
+- Update new illustrations
+- Update fonts / typesettings
+- Add icons
+- Tweak scrolling animation
+- Responsiveness
