@@ -1,12 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: 'Antenna-Regular';
+  src: url("../fonts/Antenna-Regular.eot");
+  src: url("../fonts/Antenna-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Antenna-Regular.woff") format("woff"), url("../fonts/Antenna-Regular.otf") format("truetype"), url("../fonts/Antenna-Regular.svg#Antenna-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 * {
   box-sizing: border-box; }
 
 body {
   margin: 0;
   font-size: 100%;
-  font-family: "Lato", sans-serif, sans-serif;
+  font-family: "Open Sans", sans-serif, sans-serif;
   letter-spacing: 0.05em;
   -webkit-font-smoothing: antialiased; }
 
@@ -14,7 +19,7 @@ h1, h2, h3, h4, h5, h6,
 blockquote, figure, aside {
   margin: 0;
   margin-bottom: 0.5em;
-  font-family: "Cabin Condensed", sans-serif; }
+  font-family: "Antenna-Regular"; }
 
 header, footer, aside,
 nav, section, article, figure {
@@ -161,7 +166,7 @@ figcaption {
   right: 0px; }
 
 .menu h1.logo a {
-  font-family: "Lato", sans-serif, sans-serif;
+  font-family: "Open Sans", sans-serif, sans-serif;
   font-weight: 700;
   font-size: 0.6em;
   letter-spacing: 0.05em;
@@ -176,7 +181,7 @@ figcaption {
   margin-left: 20px;
   color: #ffffff;
   display: block;
-  font-family: "Lato", sans-serif, sans-serif;
+  font-family: "Open Sans", sans-serif, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 40px;
@@ -968,6 +973,14 @@ section {
   left: 0;
   z-index: 6; }
 
+#slide-2 .item {
+  width: 831px;
+  height: 528px;
+  position: fixed;
+  bottom: 0;
+  left: 40%;
+  z-index: 20; }
+
 #slide-2 .fog-1 {
   width: 625px;
   height: 123px;
@@ -996,6 +1009,14 @@ section {
   top: 0;
   left: 0;
   z-index: 6; }
+
+#slide-3 .item {
+  width: 307px;
+  height: 407px;
+  position: fixed;
+  bottom: 0;
+  left: 69%;
+  z-index: 30; }
 
 #slide-3 .fog-1 {
   width: 625px;

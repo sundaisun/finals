@@ -133,6 +133,15 @@ section {
     z-index:6;
 }
 
+#slide-2 .item{
+    width:831px;
+    height:528px;
+    position:fixed;
+    bottom:0;
+    left:40%;
+    z-index:20;
+}
+
 #slide-2 .fog-1{
     width:625px;
     height:123px;
@@ -164,6 +173,15 @@ section {
     top:0;
     left:0;
     z-index:6;
+}
+
+#slide-3 .item{
+    width:307px;
+    height:407px;
+    position:fixed;
+    bottom:0;
+    left:69%;
+    z-index:30;
 }
 
 #slide-3 .fog-1{
