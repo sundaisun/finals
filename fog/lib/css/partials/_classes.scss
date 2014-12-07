@@ -123,3 +123,7 @@
         color:rgba(white,0.8);
     }
 }
+
+//button
+.btn{
+    @include button($ggb-orange);}

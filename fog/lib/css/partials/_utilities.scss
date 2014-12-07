@@ -59,7 +59,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa403b33', e
     @include ease-in-out();
     &:hover{
         background:$color;
-        color:invert($color);
+        color:white;
         @include box-shadow(darken($color,10%));
         border-color:darken($color,10%);
     }
@@ -68,6 +68,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa403b33', e
     }
     a{
         color:white;
+        &:hover{
+            color:white;
+        }
     }
 }
 
