@@ -149,17 +149,17 @@ figcaption {
 /* MENU CONFIG*/
 .menu {
   position: fixed;
-  right: -200px;
-  width: 260px;
-  height: 330px;
+  right: -250px;
+  width: 310px;
+  height: 100%;
   top: 0;
-  z-index: 10;
+  z-index: 800;
   text-align: left; }
   .menu .menu-wrap {
     position: absolute;
     left: 80px;
     background: #333;
-    width: 260px;
+    width: 310px;
     height: 100%; }
 
 .menu.menu-open {
@@ -930,7 +930,7 @@ section {
   min-width: 700px; }
 
 .text {
-  margin-top: 20%;
+  margin-top: 15%;
   z-index: 500;
   position: absolute;
   z-index: 500;
@@ -945,12 +945,17 @@ section {
   width: 100%;
   z-index: 400; }
 
+.slide h1 {
+  font-size: 46px;
+  color: #474747;
+  text-transform: uppercase; }
+
 #slide-1 img, #slide-2 img, #slide-3 img, #slide-4 img {
   width: 100%;
   height: auto;
   z-index: 300; }
 
-#slide-0 .bg {
+#home .bg {
   height: 100%;
   width: 100%;
   background-image: url(../images/ggb.gif);
@@ -964,16 +969,16 @@ section {
   bottom: 0;
   left: 0; }
 
-#slide-0 #title {
+#home #title {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
   position: absolute;
-  margin-top: 20%;
+  margin-top: 10%;
   font-size: 48px;
-  line-height: 1.3em; }
+  color: #3a3a3a; }
 
-#slide-1 #alamo {
+#slide-1 .bg-image {
   width: 100%;
   height: 100%;
   background: url(../images/fog.gif) no-repeat;
@@ -1001,7 +1006,7 @@ section {
   left: 0;
   z-index: 4; }
 
-#slide-2 #embarcadero {
+#slide-2 .bg-image {
   width: 100%;
   height: 100%;
   background: url(../images/fog.gif) no-repeat;
@@ -1038,7 +1043,7 @@ section {
   left: 0;
   z-index: 8; }
 
-#slide-3 #coit {
+#slide-3 .bg-image {
   width: 100%;
   height: 100%;
   background: url(../images/fog.gif) no-repeat;
@@ -1075,7 +1080,7 @@ section {
   left: 0;
   z-index: 8; }
 
-#slide-4 #palace {
+#slide-4 .bg-image {
   width: 100%;
   height: 100%;
   background: url(../images/fog.gif) no-repeat;
@@ -1086,22 +1091,22 @@ section {
   background-repeat: no-repeat;
   top: 0;
   left: 0;
-  z-index: 6; }
+  z-index: 9; }
 
 #slide-4 .fog-1 {
   width: 625px;
   height: 123px;
   position: fixed;
-  top: 8%;
+  top: 4%;
   right: 0;
-  z-index: 7; }
+  z-index: 10; }
 
 #slide-4 .fog-2 {
   width: 658px;
   height: 232px;
   position: fixed;
-  top: 40%;
+  top: 55%;
   left: 0;
-  z-index: 8; }
+  z-index: 11; }
 
 /*# sourceMappingURL=style.css.map */
