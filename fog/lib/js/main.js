@@ -1,7 +1,11 @@
-//fix responsiveness
-function adjustWindow(){
-     
-    // Get window size
+// Setup variables
+	$window = $(window);
+	$slide = $('.homeSlide');
+	$body = $('body');
+	
+	function adjustWindow(){
+		
+ // Get window size
     winH = $window.height();
     winW = $window.width();
      
@@ -10,8 +14,8 @@ function adjustWindow(){
         winH = 550;
     }
      
-    // Init Skrollr for 768 and up
-    if( winW >= 768) {
+    // Init Skrollr for 654 and up
+    if( winW >= 654) {
  
         // Init Skrollr
         var s = skrollr.init({
@@ -36,10 +40,9 @@ function adjustWindow(){
         // Init Skrollr
         var s = skrollr.init();
         s.destroy();
-    }
- 
-}
-
+    }	    
+	}
+    
 function initAdjustWindow() {
     return {
         match : function() {
@@ -51,4 +54,5 @@ function initAdjustWindow() {
     };
 }
  
-enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
+enquire.register("(max-width : 654px)", initAdjustWindow(), false);
+		
