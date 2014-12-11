@@ -43,4 +43,5 @@ WEEK 13
 WEEK 14
 ------
 - Adam: Implementing the Google maps with marker for each location category.
-- 
+- add sass cache to gitignore
+- fix typo
