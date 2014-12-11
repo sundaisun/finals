@@ -39,3 +39,8 @@ WEEK 13
 - Add icons
 - Tweak scrolling animation
 - Responsiveness
+
+WEEK 14
+------
+- Adam: Implementing the Google maps with marker for each location category.
+- 
