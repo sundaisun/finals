@@ -112,7 +112,7 @@ figcaption {
   /* IE10+ */
   background: linear-gradient(to bottom, rgba(64, 59, 51, 0.98) 0%, rgba(67, 55, 48, 0.98) 12%, rgba(88, 29, 28, 0.62) 88%, rgba(91, 25, 25, 0.62) 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa403b33', endColorstr='#9e5b1919',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa403b33', endColorstr='#9e5b1919',GradientType=0 );
   /* IE6-9 */
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -893,7 +893,8 @@ figcaption {
     margin-left: 91.66667%;
     margin-bottom: 20px; } }
 html, body {
-  height: 5800px !important; }
+  height: 5800px !important;
+  background-image: url(../images/ggb.gif); }
 
 #position-log {
   position: fixed;
@@ -1167,3 +1168,5 @@ section {
 
   #slide-1 .fog-1, #slide-1 .fog-2, #slide-2 .fog-1, #slide-2 .fog-2, #slide-3 .fog-1, #slide-3 .fog-2, #slide-4 .fog-1, #slide-4 .fog-2 {
     display: none; } }
+
+/*# sourceMappingURL=style.css.map */
