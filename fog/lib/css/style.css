@@ -130,7 +130,6 @@ figcaption {
   figcaption:hover {
     opacity: 1; }
 
-<<<<<<< HEAD
 /*!
  *  SF Icons by benlevywebdesign.com - http://benlevywebdesign.com
  *
@@ -457,8 +456,6 @@ figcaption {
 .sf-sfheart:before {
   content: "\F85C"; }
 
-=======
->>>>>>> cfabe8544a1a18167fdd4fb7333c784d0ba3a6b0
 .compact {
   list-style-type: none;
   margin-top: 0;
@@ -475,7 +472,6 @@ figcaption {
   margin-right: auto;
   text-align: center; }
 
-<<<<<<< HEAD
 /* -- New Menu -- */
 #navdrawer-icon {
   /*background-image: url(../images/navdrawer.png);
@@ -542,49 +538,10 @@ h1.logo a {
   color: #3a3a3a;
   display: block;
   font-family: "Antenna-Regular", "Open Sans", sans-serif, sans-serif;
-=======
-/* MENU CONFIG*/
-.menu {
-  position: fixed;
-  right: -250px;
-  width: 310px;
-  height: 100%;
-  top: 0;
-  z-index: 800;
-  text-align: left; }
-  .menu .menu-wrap {
-    position: absolute;
-    left: 80px;
-    background: #333;
-    width: 310px;
-    height: 100%; }
-
-.menu.menu-open {
-  right: 0px; }
-
-.menu h1.logo a {
-  font-family: "Open Sans", sans-serif, sans-serif;
-  font-weight: 700;
-  font-size: 0.6em;
-  letter-spacing: 0.05em;
-  line-height: 30px;
-  color: #ef7700;
-  margin-top: 20px; }
-
-.menu h1.logo a:hover {
-  color: #ffffff; }
-
-.menu a {
-  margin-left: 20px;
-  color: #ffffff;
-  display: block;
-  font-family: "Open Sans", sans-serif, sans-serif;
->>>>>>> cfabe8544a1a18167fdd4fb7333c784d0ba3a6b0
   font-size: 14px;
   font-weight: 300;
   line-height: 40px;
   letter-spacing: 0.1em;
-<<<<<<< HEAD
   text-transform: uppercase;
   text-align: center; }
 
@@ -938,64 +895,6 @@ h1.logo a {
         color:rgba(white,0.8);
     }
 }*/
-=======
-  text-transform: uppercase; }
-
-.menu a:hover {
-  color: #ef7700; }
-
-.menu a:active {
-  color: #ffffff; }
-
-/* Push the body after clicking the menu button */
-.body-push {
-  overflow-x: hidden;
-  position: relative;
-  left: 0; }
-
-.body-push-toleft {
-  left: -200px; }
-
-.menu,
-.body-push {
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out; }
-
-#menuToggle {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  z-index: 999;
-  display: block;
-  text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.25);
-  transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out; }
-  #menuToggle:hover {
-    background: rgba(0, 0, 0, 0.2); }
-
-#close {
-  position: absolute;
-  top: 20px;
-  left: 58%;
-  color: #fff;
-  font-size: 1.3em;
-  font-weight: 700;
-  cursor: pointer; }
-  #close:hover {
-    color: rgba(255, 255, 255, 0.8); }
-
->>>>>>> cfabe8544a1a18167fdd4fb7333c784d0ba3a6b0
 .btn {
   border: 2px solid #ef7700;
   color: #ef7700;
