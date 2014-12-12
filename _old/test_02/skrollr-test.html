@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skrollr Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="position-log">0</div>
+    <section id="slide-1">
+        <div class="bg"></div>
+        <div id="title"
+        data-top="transform:translateY(0px)"
+        data--550-top="transform:translateY(-500px)"
+        data-anchor-target="#slide-1"
+        >Fog of San Francisco</div>
+        <div id="coit"
+            data-top="opacity:0; transform:translateY(1000px)"
+            data--1400-top="opacity:1; transform:translateY(0px)"
+            data-3500="opacity:1; transform:translateY(0px)"      
+            data-4000="opacity:1; transform:translateY(-1000px)"
+            data-anchor-target="#slide-1"
+        ></div>
+        <div class="fog-1"
+            data-1124="opacity:0; transform:translateX(400px)"
+            data-2000="opacity:1; transform:translateX(-700px)"
+            data-3500="opacity:1; transform:translateX(-700px)"
+            data-4000="opacity:0; transform:translateX(-1400px)"
+            data-anchor-target="#slide-1"
+        ><img src="cloud1.png"></div>
+        <div class="fog-2"
+            data-1600="opacity:0; transform:translateX(-400px)"
+            data-2200="opacity:1; transform:translateX(500px)"
+            data-3500="opacity:1; transform:translateX(500px)"
+            data-3800="opacity:1; transform:translateX(1500px)"
+            data-anchor-target="#slide-1"><img src="cloud2.png"></div>
+        <div class="text"
+            data-2300="opacity:0; transform:translateX(0px)"
+            data-2500="opacity:1; transform:translateX(200px)"
+            data-3500="opacity:1; transform:translateX(200px)"
+            data-3800="opacity:0"
+            data-anchor-target="#slide-1">
+            <h1>Some text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque tempor sem in consequat. Fusce facilisis vestibulum arcu vitae eleifend. Donec ac felis urna.</p>
+        </div>
+    </section><!--section 1-->
+    <section id="slide-2">
+        <div class="bg"></div>
+        <div id="twin"
+            data-3600="opacity:0; transform:translateY(1000px)"
+            data-4500="opacity:1; transform:translateY(0px)"
+            data-anchor-target="#slide-2"
+        ></div>
+        <div class="fog-1"
+            data-4500="opacity:0; transform:translateX(400px)"
+            data-5000="opacity:1; transform:translateX(-700px)"
+            data-anchor-target="#slide-2"
+        ><img src="cloud1.png"></div>
+        <div class="fog-2"
+            data-4990="opacity:0; transform:translateX(-400px)"
+            data-5300="opacity:1; transform:translateX(500px)"
+            data-anchor-target="#slide-2"><img src="cloud2.png"></div>
+        <div class="text"
+            data-5320="opacity:0; transform:translateX(0px)"
+            data-6000="opacity:1; transform:translateX(200px)"
+            data-anchor-target="#slide-2">
+            <h1>Some text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque tempor sem in consequat. Fusce facilisis vestibulum arcu vitae eleifend. Donec ac felis urna.</p></div>
+    </section>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init({
+            render: function(data){
+                //log current scroll position
+                $('#position-log').text(data.curTop);
+            }
+        });
+    </script>
+</body>
+</html>
