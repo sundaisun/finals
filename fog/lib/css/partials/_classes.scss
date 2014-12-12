@@ -17,6 +17,7 @@
     margin-right:auto;
     text-align:center;}
 
+<<<<<<< HEAD
 /* -- New Menu -- */
 
 #navdrawer-icon {
@@ -403,6 +404,11 @@ h1.logo a {
 
 /* MENU CONFIG*/
 /*.menu {
+=======
+
+/* MENU CONFIG*/
+.menu {
+>>>>>>> cfabe8544a1a18167fdd4fb7333c784d0ba3a6b0
 	position: fixed;
 	right: -250px;
 	width: 310px;
@@ -456,10 +462,17 @@ h1.logo a {
 
 .menu a:active {
 	color: #ffffff;
+<<<<<<< HEAD
 }*/
 
 /* Push the body after clicking the menu button */
 /*.body-push {
+=======
+}
+
+/* Push the body after clicking the menu button */
+.body-push {
+>>>>>>> cfabe8544a1a18167fdd4fb7333c784d0ba3a6b0
 	overflow-x: hidden;
 	position: relative;
 	left: 0;
@@ -505,8 +518,16 @@ h1.logo a {
     &:hover{
         color:rgba(white,0.8);
     }
+<<<<<<< HEAD
 }*/
 
 //button
 .btn{
     @include button($ggb-orange);}
+=======
+}
+
+//button
+.btn{
+    @include button($ggb-orange);}
+>>>>>>> cfabe8544a1a18167fdd4fb7333c784d0ba3a6b0
