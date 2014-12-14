@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="lib/css/style.css">
 </head>
 <body>
-    <a href="#" id="right-trigger" class="toggle-menu menu-top"> <div id="navdrawer-icon"><i class="sf sf-sfmenu sf-fw"></i></div>
+    <a href="#" id="navdrawer-icon" class="toggle-menu menu-top"><i class="sf sf-sfmenu sf-fw"></i>
     </a>
-    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-top">
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-top cbp-spmenu">
     <h1 class="logo"><a href="#home">The Fog of SF</a></h1>
     <a href="#alamo"><i class="sf sf-painted-ladies sf-fw"></i>Alamo Square</a>
     <a href="#embarcadero"><i class="sf sf-embarcadero sf-fw"></i>Embarcadero</a>
@@ -16,6 +16,7 @@
     <a href="#palace"><i class="sf sf-palace-of-fine-arts sf-fw"></i>Palace of Fine Arts</a>
     </nav>
 
+   <!-- 
    <nav class="menu">
 		<div class="menu-wrap">
 			<h1 class="logo"><a href="#home" data-menu-top="0">Fog of SF</a></h1>
@@ -24,10 +25,10 @@
 			<a href="#embarcadero" data-menu-top="1800">Embarcadero</a>
 			<a href="#coit" data-menu-top="2800">Coit Tower</a>
 			<a href="#palace" data-menu-top="4100">Palace of Fine Art</a>
-		</div>
+		</div> -->
 		<!-- Menu button -->
-		<div id="menuToggle">&Xi;</div>
-   </nav>
+		<!--<div id="menuToggle">&Xi;</div>
+     </nav> -->
 <!--END OF NAV-->
     <div id="position-log">0</div>
     <div class="project-wrap">
@@ -42,8 +43,12 @@
                 <div class="title"
                 data-top="transform:translateY(0px)"
                 data--550-top="transform:translateY(-1000px)"
-                data-anchor-target="#home"
-                ><p>The Fog of</p><h1>San Francisco</h1></div>
+                data-anchor-target="#home">
+                <p>The Fog of</p><h1>San Francisco</h1>
+                <a href="#alamo"><i class="sf sf-painted-ladies sf-fw homeicon"></i></a>
+                <a href="#embarcadero"><i class="sf sf-embarcadero sf-fw homeicon"></i></a>
+                <a href="#coit"><i class="sf sf-coit-tower sf-fw homeicon"></i></a>
+                <a href="#palace"><i class="sf sf-palace-of-fine-arts sf-fw homeicon"></i></a></div>
             </div><!--slide container-->
         </section>
         <section id="slide-1">
@@ -231,6 +236,11 @@
       });
     </script>
 
+    <script>
+    $('#navdrawer-icon').click(function(){
+    $(this).find('i').toggleClass('sf sf-up-arrow sf-fw sf sf-sfmenu sf-fw')
+    });
+    </script>
     <!-- <script>
     // Menu settings
 			$('#menuToggle').on('click', function(){

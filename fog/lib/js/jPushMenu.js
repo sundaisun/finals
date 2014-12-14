@@ -60,7 +60,7 @@
 			 }); 
 
 			 $('.cbp-spmenu,.toggle-menu').click(function(e){ 
-				 e.stopPropagation(); 
+				 e.stopPropagation();
 			 });
 		 }
 	};
