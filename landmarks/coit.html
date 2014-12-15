@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fog of San Francisco</title>
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <style>
+    html, body{
+        height:4000px !important;
+    }
+    </style>
+</head>
+<body>
+    <div id="position-log">0</div>
+    <div class="project-wrap">
+    <div class="skrollr-wrapper">
+        <section class="homeSlide innerpage" id="coit-home">
+             <div class="slide-container">
+               <div class="bg-image"
+                    data-top="transform:scale(1) translateX(0px);"
+                    data-1800="transform:scale(1.1) translateX(-150px);"
+                    data-2700="transform:scale(1.2) translateX(-300px);"
+                    data-4000="transform:scale(1.4) translateX(-450px);"
+                    data-anchor-target="#coit-home"
+                ><img src="../lib/images/coit-inner.jpg"></div>
+                <a class="btn" href="../index.html">Go Back</a>
+                <div class="text"
+                    data-top="opacity:0; transform:translateY(0px);"
+                    data-1000="opacity:0.8; transform:translateY(-100px);"
+                    data-1200="opacity:0;transform:translateY(-300px);"
+                    data-anchor-target="#coit-home"
+                ><h1>Categorized as Art Deco architecture .</h1>
+                </div>
+                <div class="text"
+                    data-1000="opacity:0; transform:translateY(0px);"
+                    data-2000="opacity:0.8; transform:translateY(-100px);"
+                    data-2200="opacity:0;transform:translateY(-300px);"
+                    data-anchor-target="#coit-home"
+                ><h1>Rumor has it that it’s supposed to represent a firehose nozzle but has been shot down as being false.
+</h1>
+                </div>
+                 <div class="text"
+                    data-2000="opacity:0; transform:translateY(0px);"
+                    data-3000="opacity:0.8;transform:translateY(-100px);"
+                    data-3200="opacity:0;transform:translateY(-300px);"
+                    data-anchor-target="#coit-home"
+                ><h1>Built in honor for the firefighters of San Francisco funded by Lillian Hitchcock Coit.
+</h1>
+
+                    <div class="map_link">
+                        <h1><a href="#openMenu">SEE THE LOCATION ON A MAP</a>
+                    </div>
+
+                </div>
+            </div><!--slide container-->
+        </section>
+
+
+         <!----MODAL MENU---->
+
+        <div id="openMenu" class="menuDialog">
+
+        <a href="#closeMenu" title="Close"><div class="menu_close">CLOSE</div></a>
+        
+        <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Coit%20Tower%2C%20Telegraph%20Hill%20Boulevard%2C%20San%20Francisco%2C%20CA%2C%20United%20States&key=AIzaSyCrtwaD-cdZENnriJodg30mMIhQkxZOmSI"></iframe>
+           
+        </div>
+        <------------------->
+
+
+    </div><!--scrollr-wrapper-->
+    </div><!--project wrap-->
+    <script src="../lib/js/jquery-1.11.1.min.js"></script>
+    <script src="../lib/js/enquire.js"></script>
+    <script src="../lib/js/skrollr.min.js"></script>
+<!--    <script src="lib/js/skrollr.menu.min.js"></script>-->
+    <script src="../lib/js/main.js"></script>
+    <script>
+    // Init Skrollr
+    var s = skrollr.init(
+    {
+            render: function(data){
+                //log current scroll position
+                $('#position-log').text(data.curTop);
+            }
+        }
+    );
+
+    // Refresh Skrollr after resizing our sections
+    s.refresh($('.homeSlide'));
+        
+
+//    //Skrollr menu
+//var link = document.querySelector('a');
+//        skrollr.menu.click(link);  
+        
+    </script>
+    
+
+</body>
+</html>

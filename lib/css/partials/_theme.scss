@@ -1,0 +1,389 @@
+html, body{
+    height:5800px !important;
+    background-image:url(../images/ggb.gif);
+}
+
+#position-log{
+    position:fixed;
+    top:20px;
+    left:20px;
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    padding:20px;
+    z-index:9999;
+}
+
+.project-wrap{
+    position:relative;
+    overflow:hidden;
+}
+
+.scrollr-wrapper{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+section {
+    height:1000px;
+}
+
+
+.slide-container{
+    margin:0 auto;
+    height:100%;
+    padding:0;
+    position:relative;
+}
+
+
+.btn{
+    z-index:900;
+}
+
+//center text and put it on top of landmark img
+.text{
+    margin-top:15%;
+    position:absolute;
+    z-index:500;
+    width:100%;
+    text-align: center;
+}
+
+.landmark{
+    display:inline-block;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:400;
+}
+
+.slide h1{
+    font-size:46px;
+    color:lighten($grey,5%);
+    text-transform: uppercase;
+}
+
+//make landmark images 100% wide
+#slide-1 img, #slide-2 img, #slide-3 img, #slide-4 img{
+    width:100%;
+    height:auto;
+    z-index:300;
+}
+
+
+//Slide 0 - landing
+#home .bg {
+    height:100%;
+    width:100%;
+    background-image:url(../images/ggb.gif);
+    @include bg-size(contain);
+}
+
+#home .title{
+    width:100%;
+    text-align:center;
+    text-transform: uppercase;
+    position:absolute;
+    margin-top:10%;
+    font-size:48px;
+    color:$grey;
+}
+
+//slide 1 - alamo square
+#slide-1 .bg-image{
+    width:100%;
+    height:100%;
+    background:url(../images/fog.gif) no-repeat;
+    @include bg-size(cover);
+}
+
+#slide-1 .fog-1{
+    width:625px;
+    height:123px;
+    position:fixed;
+    top:60%;
+    right:0;
+    z-index:3;
+}
+
+#slide-1 .fog-2{
+    width:519px;
+    height:111px;
+    position:fixed;
+    top:55%;
+    left:0;
+    z-index:4;
+}
+
+
+//Slide 2 - embarcadero
+#slide-2 .bg-image{
+    width:100%;
+    height:100%;
+    background:url(../images/fog.gif) no-repeat;
+    @include bg-size(cover);
+    z-index:6;
+}
+
+#slide-2 .item{
+    width:831px;
+    height:528px;
+    position:fixed;
+    bottom:0;
+    left:40%;
+    z-index:20;
+}
+
+#slide-2 .fog-1{
+    width:625px;
+    height:123px;
+    position:fixed;
+    top:6%;
+    right:0;
+    z-index:7;
+}
+
+#slide-2 .fog-2{
+   width:658px;
+    height:232px;
+    position:fixed;
+    top:50%;
+    left:0;
+    z-index:8;
+}
+
+//Slide 3
+#slide-3 .bg-image{
+    width:100%;
+    height:100%;
+    background:url(../images/fog.gif);
+    @include bg-size(cover);
+    z-index:6;
+}
+
+#slide-3 .item{
+    width:414px;
+    height:524px;
+    position:fixed;
+    bottom:-30px;
+    left:60%;
+    z-index:30;
+}
+
+#slide-3 .fog-1{
+    width:625px;
+    height:123px;
+    position:fixed;
+    top:2%;
+    right:0;
+    z-index:6;
+}
+
+#slide-3 .fog-2{
+   width:658px;
+    height:232px;
+    position:fixed;
+    top:40%;
+    left:0;
+    z-index:8;
+}
+
+//Slide 4
+#slide-4 .bg-image{
+    width:100%;
+    height:100%;
+    background:url(../images/fog.gif);
+    @include bg-size(cover);
+    z-index:9;
+}
+
+
+#slide-4 .fog-1{
+    width:625px;
+    height:123px;
+    position:fixed;
+    top:4%;
+    right:0;
+    z-index:10;
+}
+
+#slide-4 .fog-2{
+    width:658px;
+    height:232px;
+    position:fixed;
+    top:55%;
+    left:0;
+    z-index:11;
+}
+
+
+//Inner pages
+.innerpage .bg-image{
+    width:100%;
+    height:auto;
+    position:fixed;
+    bottom:-30px;
+    left:0;
+    right:0;
+    z-index:10;
+}
+
+.innerpage .text{
+    z-index:600;
+    position:fixed;
+    left:0;
+    bottom:5%;
+    
+}
+
+.innerpage .btn{
+    position:fixed;
+    top:2%;
+    left:5%;
+}
+
+//media queries
+@media all and (max-width:654px){
+.text{
+    margin-top:40%;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    h1{
+        font-size:2.5em;
+    }
+}    
+    
+#slide-2 .item{
+    left:5%;
+}
+    
+#slide-3 .item{
+    left:25%;
+    width:372.6px;
+    height:471.6px;
+}
+    
+#slide-1 img, #slide-4 img{
+    width:250%;
+}
+
+#slide-4 img{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#slide-1 .fog-1, #slide-1 .fog-2, #slide-2 .fog-1, #slide-2 .fog-2, #slide-3 .fog-1, #slide-3 .fog-2, #slide-4 .fog-1, #slide-4 .fog-2{
+display:none;
+}
+
+}
+
+.map_link a {
+    color: #ef7700;
+    text-decoration: none;
+}
+
+.menuDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(192,224,255,0.8);
+    z-index: 1000;
+    opacity:0;
+    pointer-events: none;
+}
+
+.menuDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.menu_container {
+    width: 30%;
+    height: 65%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    min-width: 447px;
+    padding-top: 10px;
+}
+
+.menu_me{
+    position: relative;
+    background: #fff;
+    width: 96%;
+    height: 23%;
+    display: block;
+    float: left;
+    clear: right;
+    margin: 2%;
+}
+
+.menu_close {
+    z-index: 10;
+    display: block;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 70px;
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    opacity: 0.6;
+    padding-top: 20px;
+}
+
+#openMenu iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 1200px;
+    height: 675px;
+}
+
+@media screen and (max-width: 1400px) {
+   #openMenu iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 800px;
+    height: 450px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+   #openMenu iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 500px;
+    height: 281px;
+}
+}
