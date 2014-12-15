@@ -1,0 +1,190 @@
+//utilities - functions, mixins
+//gradient overlay mixins
+@mixin gradient($alpha1: 0%, $alpha2: 12%, $alpha3:88%){
+background: -moz-linear-gradient(top,  rgba(64,59,51,0.98) $alpha1, rgba(67,55,48,0.98) $alpha2, rgba(88,29,28, 0.62) $alpha3, rgba(91,25,25, 0.62) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop($alpha1,rgba(64,59,51, 0.98)), color-stop($alpha2,rgba(67,55,48, 0.98)), color-stop($alpha3,rgba(88,29,28, 0.62)), color-stop(100%,rgba(91,25,25, 0.62))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(64,59,51, 0.98) $alpha1,rgba(67,55,48, 0.98) $alpha2,rgba(88,29,28, 0.62) $alpha3,rgba(91,25,25, 0.62) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(64,59,51, 0.98) $alpha1,rgba(67,55,48, 0.98) $alpha2,rgba(88,29,28, 0.62) $alpha3,rgba(91,25,25, 0.62) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(64,59,51, 0.98) $alpha1,rgba(67,55,48, 0.98) $alpha2,rgba(88,29,28, 0.62) $alpha3,rgba(91,25,25, 0.62) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(64,59,51, 0.98) $alpha1,rgba(67,55,48, 0.98) $alpha2,rgba(88,29,28, 0.62) $alpha3,rgba(91,25,25, 0.62) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa403b33', endColorstr='#9e5b1919',GradientType=0 ); /* IE6-9 */
+}
+
+//blur mixins
+@mixin blur($px:5px){
+  -webkit-filter: blur($px);
+  -moz-filter: blur($px);
+  -o-filter: blur($px);
+  -ms-filter: blur($px);
+  filter: blur($px);
+}
+
+//animation mixins
+@mixin ease-in-out($sec:0.2s){
+    transition: all $sec ease-in-out;
+    -webkit-transition: all $sec ease-in-out;
+    -moz-transition: all $sec ease-in-out;
+    -o-transition: all $sec ease-in-out;}
+
+@mixin border-radius($px){
+     -webkit-border-radius: $px; 
+     -moz-border-radius: $px;
+     -o-border-radius: $px; 
+     border-radius: $px;}
+
+@mixin box-shadow($shadow:rgba(0,0,0,0.75)){
+    -webkit-box-shadow: inset 0px 0px 30px 0px $shadow;
+    -moz-box-shadow: inset 0px 0px 30px 0px $shadow;
+    box-shadow: inset 0px 0px 30px 0px $shadow;
+}
+
+//background
+@mixin bg-size($size){
+    background-size:$size;
+    background-position:bottom;
+    background-repeat:no-repeat;
+    background-color:lighten($fog-white,2%);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+//button style
+@mixin button($color){
+    border:2px solid $color;
+    color:$color;
+    background:transparent;
+    padding:0.6em;
+    margin:0.6em auto;
+    display:block;
+    text-align:center;
+    width:220px;
+    font-weight: 400;
+    letter-spacing:0.05em;
+    font-size:1.2em;
+    font-family:$font-heading;
+    text-transform:uppercase;
+    position:relative;
+    cursor:pointer;
+    outline:0;
+    @include ease-in-out();
+    &:hover{
+        background:$color;
+        color:white;
+        @include box-shadow(darken($color,10%));
+        border-color:darken($color,10%);
+    }
+    &:active{
+        top:2px;
+    }
+    a{
+        color:white;
+        &:hover{
+            color:white;
+        }
+    }
+}
+
+@mixin button-round($color){
+    @include button($color);
+    border-radius: 2em;
+    line-height:1.25em;
+}
+
+@mixin button-solid($color){
+    @include button($color);
+    background:$color;
+    a{
+        color:white;
+    }
+    &:hover{
+       background:darken($color,10%);
+    }
+}
+
+
+@mixin container-make($prefix:''){ //default value is nothing
+    .container{
+        margin-left:auto;
+        margin-right:auto;
+        @if($prefix=='xl'){
+             width: map-get($container-width, $prefix);
+            }@else if($prefix=='lg'){
+             width: map-get($container-width, $prefix);
+            }@else{
+                width: calc(100% - #{$gutter-size});
+                // use #{$variable} to include a variable, you can use it in a class name, calc etc.
+            }
+        }
+}
+
+// .column{
+//     float:left;
+//     padding-left: $gutter-size / 2;
+//     padding-right: $gutter-size / 2;
+// }
+
+
+// [class^=col-] { //select any element start with a name of "col-"
+//     float:left;
+//     padding-left: $gutter-size / 2;
+//     padding-right: $gutter-size / 2;
+// }
+
+//=======ABOVE 2 DO THE SAME THING, BUT THEY ARE NOT AS CROSS-PLATFORM
+//AS BELOW METHOD. DOES NOT WORK WELL ON SAFARI. MAKE A LONG LIST OF CLASS SELCTIONS===========
+@function class-stack($type,$middlefix,$size,$list:''){
+    @for $i from 1 through $size {
+        @if($list!=''){
+            $list: "#{$list}, ";
+        }
+        $list: "#{$list}.#{$type}#{$middlefix}-#{$i}";
+    }
+    @return $list;
+}
+
+@mixin column-make(){
+    $list: class-stack('col',"",$column-length,"");
+    @each $key, $value in $container-width { //key are value are the same with prefix and prevalue
+        $list: class-stack('col',"-#{$key}", $column-length, $list);
+    }
+    #{$list} {
+        float:left;
+        padding-left: $gutter-size / 2;
+        padding-right: $gutter-size / 2;
+    }
+}
+//=======end MAKE A LONG LIST OF CLASS SELCTIONS===========
+
+//=======MAKING COLUMNS, GRIDS===========
+//======= DO NOT EVER TRY STYLE THESE GRIDS =======
+@mixin columns-make($prefix:''){
+    @if($prefix != ''){ //if prefix does not equal to empty, then add a dash before prefix for mobile sizes
+        $prefix: "-#{$prefix}";
+    }
+    @for $i from 1 through $column-length{
+        .col#{$prefix}-#{$i}{
+            width: percentage( $i / $column-length);
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+//OFFSETS
+@mixin offset-make($prefix:''){
+    @if($prefix != ''){ //if prefix does not equal to empty, then add a dash before prefix for mobile sizes
+        $prefix: "-#{$prefix}";
+    }
+    @for $i from 1 through $column-length{
+        .offset#{$prefix}-#{$i - 1}{
+            margin-left: percentage( ($i - 1) / $column-length);
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+
