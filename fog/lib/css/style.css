@@ -499,7 +499,10 @@ figcaption {
   font-size: 2em;
   /*border: 2px solid #CCD1D9;*/ }
   .homeicon:hover {
-    color: #434A54; }
+    color: #434A54;
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
 
 .backicon {
   font-size: 2em; }
