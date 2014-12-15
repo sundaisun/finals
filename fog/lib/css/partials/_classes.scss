@@ -18,6 +18,45 @@
     text-align:center;
 }
 
+.fogtitle {
+	font-family:$font-heading;
+}
+
+#indexicons {
+	background-color: rgba(245,247,250,0.6);
+	border: 2px solid #E6E9ED;
+	border-radius: 75px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* -- Individual Icon Styling  --*/
+
+.sf-painted-ladies, .sf-embarcadero, .sf-coit-tower, .sf-palace-of-fine-arts {
+	font-size: 4em;
+	color: #F5F7FA;
+	/*color: #C0362C;*/
+	-webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    transition: .3s;
+}
+
+.homeicon {
+	color: #123250;
+	font-size: 2em;
+	/*border: 2px solid #CCD1D9;*/
+	&:hover {
+		color: #434A54;
+	}
+}
+
+.backicon {
+	font-size: 2em;
+}
+
 /* -- New Menu -- */
 
 #navdrawer-icon {
@@ -40,31 +79,6 @@
 	.sf-up-arrow {
 	font-size: 2.5em;
 	}
-}	
-
-.sf-painted-ladies, .sf-embarcadero, .sf-coit-tower, .sf-palace-of-fine-arts {
-	font-size: 4em;
-	color: #F5F7FA;
-	/*color: #C0362C;*/
-	-webkit-transition: .3s;
-    -moz-transition: .3s;
-    -o-transition: .3s;
-    -ms-transition: .3s;
-    transition: .3s;
-}
-.homeicon {
-	color: #123250;
-	font-size: 2.5em;
-	background-color: rgba(245,247,250,0.3);
-	border-radius: 15%;
-	/*border: 2px solid #CCD1D9;*/
-	&:hover {
-		background-color: rgba(245,247,250,0.8);
-	}
-}
-
-.backicon {
-	font-size: 2em;
 }
 
 #right-trigger {

@@ -472,6 +472,38 @@ figcaption {
   margin-right: auto;
   text-align: center; }
 
+.fogtitle {
+  font-family: "Antenna-Regular"; }
+
+#indexicons {
+  background-color: rgba(245, 247, 250, 0.6);
+  border: 2px solid #E6E9ED;
+  border-radius: 75px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* -- Individual Icon Styling  --*/
+.sf-painted-ladies, .sf-embarcadero, .sf-coit-tower, .sf-palace-of-fine-arts {
+  font-size: 4em;
+  color: #F5F7FA;
+  /*color: #C0362C;*/
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  transition: .3s; }
+
+.homeicon {
+  color: #123250;
+  font-size: 2em;
+  /*border: 2px solid #CCD1D9;*/ }
+  .homeicon:hover {
+    color: #434A54; }
+
+.backicon {
+  font-size: 2em; }
+
 /* -- New Menu -- */
 #navdrawer-icon {
   /*background-image: url(../images/navdrawer.png);
@@ -490,28 +522,6 @@ figcaption {
     font-size: 2.5em; }
   #navdrawer-icon .sf-up-arrow {
     font-size: 2.5em; }
-
-.sf-painted-ladies, .sf-embarcadero, .sf-coit-tower, .sf-palace-of-fine-arts {
-  font-size: 4em;
-  color: #F5F7FA;
-  /*color: #C0362C;*/
-  -webkit-transition: .3s;
-  -moz-transition: .3s;
-  -o-transition: .3s;
-  -ms-transition: .3s;
-  transition: .3s; }
-
-.homeicon {
-  color: #123250;
-  font-size: 2.5em;
-  background-color: rgba(245, 247, 250, 0.3);
-  border-radius: 15%;
-  /*border: 2px solid #CCD1D9;*/ }
-  .homeicon:hover {
-    background-color: rgba(245, 247, 250, 0.8); }
-
-.backicon {
-  font-size: 2em; }
 
 #right-trigger {
   cursor: pointer;
@@ -907,14 +917,15 @@ h1.logo a {
     }
 }*/
 .btn {
-  border: 2px solid #ef7700;
+  border: 3px solid #ef7700;
+  border-radius: 50px;
   color: #ef7700;
   background: transparent;
   padding: 0.6em;
   margin: 0.6em auto;
   display: block;
   text-align: center;
-  width: 220px;
+  width: 200px;
   font-weight: 400;
   letter-spacing: 0.05em;
   font-size: 1.2em;
@@ -923,6 +934,7 @@ h1.logo a {
   position: relative;
   cursor: pointer;
   outline: 0;
+  z-index: 900000;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -935,7 +947,7 @@ h1.logo a {
     box-shadow: inset 0px 0px 30px 0px #bc5e00;
     border-color: #bc5e00; }
   .btn:active {
-    top: 2px; }
+    top: 0px; }
   .btn a {
     color: white; }
     .btn a:hover {
