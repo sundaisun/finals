@@ -43,5 +43,6 @@ WEEK 13
 WEEK 14
 ------
 - Adam: Implementing the Google maps with marker for each location category.
+- Ben: Work on the menu and add the sf icon font.
 - add sass cache to gitignore
 - fix typo
