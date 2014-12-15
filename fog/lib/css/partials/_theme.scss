@@ -54,6 +54,12 @@ section {
     text-align: center;
 }
 
+.content{
+    position:relative;
+    z-index:500;
+    width:100%;
+}
+
 .landmark{
     display:inline-block;
     position:fixed;
@@ -246,6 +252,16 @@ section {
     position:fixed;
     top:2%;
     left:5%;
+    padding: 0em;
+}
+
+.close{
+    position: absolute !important;
+    top:2%;
+    right:5%;
+    left: auto !important;
+    margin: 0;
+    padding: 0em;
 }
 
 //media queries
@@ -288,4 +304,47 @@ section {
 display:none;
 }
 
+}
+
+h1.neighborhoodtitle{
+    margin-left:100px;
+    margin-top:150px;
+}
+.neighborhood{
+    font-family:$font-main;
+    width:65%;
+    margin-left:100px;
+    margin-top: 20px;
+    text-align:left;
+    line-height:1.5;
+    background-color:$palaceoffinearts;
+    color:white;
+ }
+ h6{
+    border-bottom:1px solid $grey;
+    margin-top:50px;
+ }
+
+#openMenu iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    margin: auto;
+    position: absolute;
+    top: 0%; left: 0; bottom: 0; right: 0;
+    width: 90%;
+    height: 90%;
+}
+.menu_close {
+    position: relative;
+    top: -40px;
+    z-index: 10;
+    display: block;
+    background-color: rgba($lightgray, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    cursor: pointer;
 }
