@@ -42,7 +42,7 @@ section {
 
 
 .btn{
-    z-index:900;
+    z-index:9999;
 }
 
 //center text and put it on top of landmark img
@@ -329,11 +329,10 @@ h1.neighborhoodtitle{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    position: relative;
     margin: auto;
     position: absolute;
     top: 0%; left: 0; bottom: 0; right: 0;
-    width: 90%;
+    width: 100%;
     height: 90%;
 }
 .menu_close {
