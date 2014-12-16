@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fog of San Francisco</title>
+    <title>The Fog of San Francisco</title>
     <link rel="stylesheet" href="../lib/css/style.css">
     <style>
     html, body{
-        height:4000px !important;
+        height:1000px !important;
     }
     </style>
 </head>
@@ -23,39 +23,85 @@
                     data-4000="transform:scale(1.4) translateX(-450px);"
                     data-anchor-target="#coit-home"
                 ><img src="../lib/images/coit-inner.jpg"></div>
-                <a class="btn" href="../index.html">Go Back</a>
-                <div class="text"
-                    data-top="opacity:0; transform:translateY(0px);"
-                    data-1000="opacity:0.8; transform:translateY(-100px);"
-                    data-1200="opacity:0;transform:translateY(-300px);"
-                    data-anchor-target="#coit-home"
-                ><h1>Categorized as Art Deco architecture .</h1>
+                <a class="btn" href="../index.html#coit"><i class="sf sf-left-arrow backicon"></i> Go Back</a>
+                <div class="content" data--100-top="opacity:0;" data-100="opacity:1";>
+                    <div class="container">
+                    <h1 class="neighborhoodtitle"><i class="sf sf-coit-tower nbhdicon"></i> Coit Tower</h1>
+                    <div class="neighborhood">
+                    <ul class="sf-ul">
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>Categorized as Art Deco architecture.</li>
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>Rumor has it that it’s supposed to represent a firehose nozzle but has been shot down as being false.</li>
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>It was built in honor for the firefighters of San Francisco funded by Lillian Hitchcock Coit.</li>
+                    </ul>
+                    </div>
+                </div> <!--closed container -->
                 </div>
-                <div class="text"
-                    data-1000="opacity:0; transform:translateY(0px);"
-                    data-2000="opacity:0.8; transform:translateY(-100px);"
-                    data-2200="opacity:0;transform:translateY(-300px);"
-                    data-anchor-target="#coit-home"
-                ><h1>Rumor has it that it’s supposed to represent a firehose nozzle but has been shot down as being false.
-</h1>
+
+                <div class="content">
+                <div class="container">
+                    <div class=" col-5">
+                        <div class="col-12">
+                            <h6><i class="sf sf-right-arrow infoicon"></i> When to Go </h6>
+                             <p> Coit Tower is a fantastic place to to take in breath taking views. You can go during the day or late evening to see the sunset. </p>
+                      
+
+                        </div>
+
+                        <div class="col-12">
+                        <h6><i class="sf sf-right-arrow infoicon"></i> How to Get There </h6>
+                        <p> Coit tower located at 1 Telegraph Hill Blvd in San Francisco. For directions from different parts of the Bay Area, <a href="#"> click here. </a> </p>
+                        </div>
+                        <div class="col-12">
+                        <h6><i class="sf sf-right-arrow infoicon"></i> Where to Park </h6>
+                        <p>  Parking at the tower is very limited, and at peak times the line of cars waiting to reach the lot can be very long. </p>
+                        </div>
+                       
+                    </div>
+
+                    <div class=" col-5 offset-2">
+                          <h6><i class="sf sf-right-arrow infoicon"></i> Public Transportation </h6>
+                        <p> Coit Tower is reachable by San Francisco Muni. Muni’s #39 Coit bus travels between Coit Tower and Fisherman’s Wharf.  For more information, call Muni at <b>415-673-6864</b> or check the <a href="#"> SFMTA trip planner.</a> </p>
+
+                        <h6><i class="sf sf-right-arrow infoicon"></i> What to bring and what to wear </h6>
+                        <p>  For a scenic hike to the tower, climb Telegraph Hill’s eastern slope via the Filbert Street stairs, which pass through the Grace Marchant Garden, or the Greenwich Street stairs.
+
+</p>
+                    
+                        <h6><i class="sf sf-right-arrow infoicon"></i> Map</h6>
+                        <a href="#" class="toggle-map menu-bottom">Click to see this location on a map</h6></a>
+                        <div class="cbp-spmenu-bottom cbp-spmenu-horizontal cbp-spmenu-bottom cbp-spmenu">
+
+                        <div class="toggle-map menu-bottom menu_close"><i class="sf sf-down-arrow sf-fw downarrow"></i> Close Map <i class="sf sf-down-arrow sf-fw downarrow"></i></div>
+
+                        <div id="openMenu">
+                        <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Coit%20Tower%2C%20Telegraph%20Hill%20Boulevard%2C%20San%20Francisco%2C%20CA%2C%20United%20States&key=AIzaSyCrtwaD-cdZENnriJodg30mMIhQkxZOmSI"></iframe>
+                        </div>
+
+                    </div>
+                
+
+                </div><!--closed container-->
                 </div>
-                 <div class="text"
-                    data-2000="opacity:0; transform:translateY(0px);"
-                    data-3000="opacity:0.8;transform:translateY(-100px);"
-                    data-3200="opacity:0;transform:translateY(-300px);"
-                    data-anchor-target="#coit-home"
-                ><h1>Built in honor for the firefighters of San Francisco funded by Lillian Hitchcock Coit.
-</h1>
-                </div>
+
+
+                
             </div><!--slide container-->
         </section>
     </div><!--scrollr-wrapper-->
     </div><!--project wrap-->
+
     <script src="../lib/js/jquery-1.11.1.min.js"></script>
     <script src="../lib/js/enquire.js"></script>
     <script src="../lib/js/skrollr.min.js"></script>
 <!--    <script src="lib/js/skrollr.menu.min.js"></script>-->
     <script src="../lib/js/main.js"></script>
+
+    <script src="../lib/js/jPushMenu.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+      $('.toggle-map').jPushMenu();
+      });
+    </script>
     <script>
     // Init Skrollr
     var s = skrollr.init(
