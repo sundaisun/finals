@@ -484,8 +484,8 @@ li.neighborhooddesc {
   color: white; }
 
 #indexicons {
-  background-color: rgba(245, 247, 250, 0.6);
-  border: 2px solid #E6E9ED;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #ef7700;
   border-radius: 75px;
   width: 50%;
   margin-left: auto;
@@ -1925,5 +1925,9 @@ h6 {
   text-align: center;
   color: black;
   cursor: pointer; }
+
+.neigborhoodsection a {
+  color: #ef7700;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
