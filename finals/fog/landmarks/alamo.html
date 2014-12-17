@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fog of San Francisco</title>
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <style>
+    html, body{
+        height:1000px !important;
+    }
+    </style>
+</head>
+<body>
+    <div id="position-log">0</div>
+    <div class="project-wrap">
+    <div class="skrollr-wrapper">
+        <section class="homeSlide innerpage" id="alamo-home">
+             <div class="slide-container">
+               <div class="bg-image"
+                    data-top="transform:scale(1) translateX(0px);"
+                    data-1800="transform:scale(1.1) translateX(-150px);"
+                    data-2700="transform:scale(1.2) translateX(-300px);"
+                    data-4000="transform:scale(1.4) translateX(-450px);"
+                    data-anchor-target="#alamo-home"
+                ><img src="../lib/images/alamo-inner.png"></div>
+                <a class="btn" href="../index.html#alamo"><i class="sf sf-left-arrow backicon"></i> Go Back</a>
+                <div class="content" data--100-top="opacity:0;" data-100="opacity:1";>
+                    <div class="container">
+                    <h1 class="neighborhoodtitle"><i class="sf sf-painted-ladies nbhdicon"></i> Alamo Square</h1>
+                    <div class="neighborhood">
+                    <ul class="sf-ul">
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>In 1856 Mayor James Van Ness declared Alamo Square.</li>
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>Famous for the Painted Ladies which are a shining example of Victorian Italianate architecture.</li>
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>“Postcard Row” is the nickname for the iconic photo that features the instantly reconizable "painted ladies".</li>
+                    </ul>
+                    </div>
+                </div> <!--closed container -->
+                </div>
+
+                <div class="content neigborhoodsection">
+                <div class="container">
+                    <div class=" col-5">
+                        <div class="col-12">
+                            <h6><i class="sf sf-right-arrow infoicon"></i> When to Go </h6>
+                             <p> Alamo Square has a fantastic park thats great to hang out at for an hour or more throughout most of the year.</p>
+                      
+
+                        </div>
+
+                        <div class="col-12 neigborhoodsection">
+                        <h6><i class="sf sf-right-arrow infoicon"></i> How to Get There </h6>
+                        <p>Alamo Square is located on the 700 block corner at Steiner Street & Hayes St. For directions from different parts of the Bay Area, <a href="#"> click here. </a> </p>
+                        </div>
+                        <div class="col-12">
+                        <h6><i class="sf sf-right-arrow infoicon"></i> Where to Park </h6>
+                        <p> Parking is available around the park and on neightboring streets. You shouldn't have to drive very far.</p>
+                        </div>
+                       
+                    </div>
+
+                    <div class=" col-5 offset-2 neigborhoodsection">
+                          <h6><i class="sf sf-right-arrow infoicon"></i> Muni Public Transportation </h6>
+                        <p>  Alamo Square is easily accessible by San Francisco Muni buses
+                            from Church Street at Market, take the #22 Fillmore bus to Hayes Street. Alamo Square Park is one block over to the west, at Steiner Street. Or from Hayes Valley, go west on Hayes Street about three blocks past the commercial sector. For more information, call Muni at <b>415-673-6864</b> or check the <a href="#"> SFMTA trip planner.</a> </p>
+
+                        <h6><i class="sf sf-right-arrow infoicon"></i> What to bring and what to wear </h6>
+                        <p>A walk with your dog can a nice addition to this senic view. Pack up some food and drink and enjoy a day in the park with the kids. Because you’ll be going out, you’ll want to bring layers to be prepared for all weather conditions. Snacks and a camera are also recommended.</p>
+                    
+                        <h6><i class="sf sf-right-arrow infoicon"></i> Map</h6>
+                        <a href="#" class="toggle-map menu-bottom">Click to see this location on a map</h6></a>
+                        <div class="cbp-spmenu-bottom cbp-spmenu-horizontal cbp-spmenu-bottom cbp-spmenu">
+
+                        <div class="toggle-map menu-bottom menu_close"><i class="sf sf-down-arrow sf-fw downarrow"></i> Close Map <i class="sf sf-down-arrow sf-fw downarrow"></i></div>
+
+                        <div id="openMenu">
+                        <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Painted%20Ladies%2C%20Steiner%20Street%2C%20San%20Francisco%2C%20CA%2C%20United%20States&key=AIzaSyCrtwaD-cdZENnriJodg30mMIhQkxZOmSI"></iframe>
+                        </div>
+
+                    </div>
+                
+
+                </div><!--closed container-->
+                </div>
+
+
+                
+            </div><!--slide container-->
+        </section>
+    </div><!--scrollr-wrapper-->
+    </div><!--project wrap-->
+
+    <script src="../lib/js/jquery-1.11.1.min.js"></script>
+    <script src="../lib/js/enquire.js"></script>
+    <script src="../lib/js/skrollr.min.js"></script>
+<!--    <script src="lib/js/skrollr.menu.min.js"></script>-->
+    <script src="../lib/js/main.js"></script>
+
+    <script src="../lib/js/jPushMenu.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+      $('.toggle-map').jPushMenu();
+      });
+    </script>
+    <script>
+    // Init Skrollr
+    var s = skrollr.init(
+    {
+            render: function(data){
+                //log current scroll position
+                $('#position-log').text(data.curTop);
+            }
+        }
+    );
+
+    // Refresh Skrollr after resizing our sections
+    s.refresh($('.homeSlide'));
+        
+
+//    //Skrollr menu
+//var link = document.querySelector('a');
+//        skrollr.menu.click(link);  
+        
+    </script>
+    
+
+</body>
+</html>

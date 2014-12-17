@@ -1,0 +1,120 @@
+//reset css
+
+//sets box model back to IE6 model
+*{
+	box-sizing: border-box;}
+
+body{
+	margin:0;
+	font-size:100%;
+	font-family:$font-main, sans-serif;
+    letter-spacing: 0.05em;
+    -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3,h4,h5,h6,
+blockquote,figure,aside{
+	margin:0;
+    margin-bottom:0.5em; //space below headings
+    font-family: $font-heading;
+}
+
+header, footer, aside, 
+nav, section, article, figure{
+    display:block;}
+
+section{
+    margin-top:30px;
+}
+
+h1{font-size:2em;}
+h2{font-size:1.85em;}
+h3{font-size:1.45em;}
+h4{font-size:1.2em;}
+h5{font-size:1.1em;}
+h6{font-size:0.9em;}
+//you can put small in h1 or h2 as small text
+small{
+	font-size:0.6em;
+	opacity:0.7;
+}
+
+//add space after paragraphs
+p{
+    margin:0;
+    margin-bottom:1em;
+}
+
+strong{
+    font-weight:700;
+}
+
+em{
+    font-style:italic;
+}
+
+table{
+	display:table;
+	border-collapse:collapse;
+	width:100%;
+}
+
+input, textarea, td, th, tr, table{
+	font-family:inherit;
+	font-size:inherit;
+    padding:0.5em;
+}
+
+a{  text-decoration: none;
+}
+
+img{
+    border:0;
+}
+
+//IMG HOVER
+figure{
+    text-align:center;
+    cursor:pointer;
+    position:relative;
+    display:block;
+    width:100%;
+    height:auto;
+    img{
+        width:100%;
+        height:auto;
+    }
+}
+
+
+//gallery hover
+figcaption{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    padding-top:30%;
+    opacity:0;
+    margin-left:auto;
+    margin-right:auto;
+    @include gradient;
+    @include ease-in-out(0.3s);
+    h1{
+        color:white;
+        text-transform: uppercase;
+}
+    p{
+        color:lighten(white,10%);
+        margin-bottom:10%;
+        margin-left:auto;
+        margin-right:auto;
+        width:80%;
+    }
+    &:hover{
+        opacity:1;
+    }
+}
