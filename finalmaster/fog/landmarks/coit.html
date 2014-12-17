@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Fog of San Francisco</title>
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <style>
+    html, body{
+        height:1000px !important;
+    }
+    </style>
+</head>
+<body>
+    <div id="position-log">0</div>
+    <div class="project-wrap">
+    <div class="skrollr-wrapper">
+        <section class="homeSlide innerpage" id="coit-home">
+             <div class="slide-container">
+               <div class="bg-image"
+                    data-top="transform:scale(1) translateX(0px);"
+                    data-1800="transform:scale(1.1) translateX(-150px);"
+                    data-2700="transform:scale(1.2) translateX(-300px);"
+                    data-4000="transform:scale(1.4) translateX(-450px);"
+                    data-anchor-target="#coit-home"
+                ><img src="../lib/images/coit-inner.jpg"></div>
+                <a class="btn" href="../index.html#coit"><i class="sf sf-left-arrow backicon"></i> Go Back</a>
+                <div class="content" data--100-top="opacity:0;" data-100="opacity:1";>
+                    <div class="container">
+                    <h1 class="neighborhoodtitle"><i class="sf sf-coit-tower nbhdicon"></i> Coit Tower</h1>
+                    <div class="neighborhood">
+                    <ul class="sf-ul">
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>Categorized as Art Deco architecture.</li>
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>Rumor has it that it’s supposed to represent a firehose nozzle but has been shot down as being false.</li>
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>It was built in honor for the firefighters of San Francisco funded by Lillian Hitchcock Coit.</li>
+                    </ul>
+                    </div>
+                </div> <!--closed container -->
+                </div>
+
+                <div class="content">
+                <div class="container">
+                    <div class=" col-5">
+                        <div class="col-12 neigborhoodsection">
+                            <h6><i class="sf sf-right-arrow infoicon"></i> When to Go </h6>
+                             <p> Coit Tower is a fantastic place to to take in breath taking views. You can go during the day or late evening to see the sunset. </p>
+                      
+
+                        </div>
+
+                        <div class="col-12 neigborhoodsection">
+                        <h6><i class="sf sf-right-arrow infoicon"></i> How to Get There </h6>
+                        <p> Coit tower located at 1 Telegraph Hill Blvd in San Francisco. For directions from different parts of the Bay Area, <a href="#"> click here. </a> </p>
+                        </div>
+                        <div class="col-12">
+                        <h6><i class="sf sf-right-arrow infoicon"></i> Where to Park </h6>
+                        <p>  Parking at the tower is very limited, and at peak times the line of cars waiting to reach the lot can be very long. </p>
+                        </div>
+                       
+                    </div>
+
+                    <div class=" col-5 offset-2 neigborhoodsection">
+                          <h6><i class="sf sf-right-arrow infoicon"></i> Public Transportation </h6>
+                        <p> Coit Tower is reachable by San Francisco Muni. Muni’s #39 Coit bus travels between Coit Tower and Fisherman’s Wharf.  For more information, call Muni at <b>415-673-6864</b> or check the <a href="#"> SFMTA trip planner.</a> </p>
+
+                        <h6><i class="sf sf-right-arrow infoicon"></i> What to bring and what to wear </h6>
+                        <p>  For a scenic hike to the tower, climb Telegraph Hill’s eastern slope via the Filbert Street stairs, which pass through the Grace Marchant Garden, or the Greenwich Street stairs.
+
+</p>
+                    
+                        <h6><i class="sf sf-right-arrow infoicon"></i> Map</h6>
+                        <a href="#" class="toggle-map menu-bottom">Click to see this location on a map</h6></a>
+                        <div class="cbp-spmenu-bottom cbp-spmenu-horizontal cbp-spmenu-bottom cbp-spmenu">
+
+                        <div class="toggle-map menu-bottom menu_close"><i class="sf sf-down-arrow sf-fw downarrow"></i> Close Map <i class="sf sf-down-arrow sf-fw downarrow"></i></div>
+
+                        <div id="openMenu">
+                        <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Coit%20Tower%2C%20Telegraph%20Hill%20Boulevard%2C%20San%20Francisco%2C%20CA%2C%20United%20States&key=AIzaSyCrtwaD-cdZENnriJodg30mMIhQkxZOmSI"></iframe>
+                        </div>
+
+                    </div>
+                
+
+                </div><!--closed container-->
+                </div>
+
+
+                
+            </div><!--slide container-->
+        </section>
+    </div><!--scrollr-wrapper-->
+    </div><!--project wrap-->
+
+    <script src="../lib/js/jquery-1.11.1.min.js"></script>
+    <script src="../lib/js/enquire.js"></script>
+    <script src="../lib/js/skrollr.min.js"></script>
+<!--    <script src="lib/js/skrollr.menu.min.js"></script>-->
+    <script src="../lib/js/main.js"></script>
+
+    <script src="../lib/js/jPushMenu.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+      $('.toggle-map').jPushMenu();
+      });
+    </script>
+    <script>
+    // Init Skrollr
+    var s = skrollr.init(
+    {
+            render: function(data){
+                //log current scroll position
+                $('#position-log').text(data.curTop);
+            }
+        }
+    );
+
+    // Refresh Skrollr after resizing our sections
+    s.refresh($('.homeSlide'));
+        
+
+//    //Skrollr menu
+//var link = document.querySelector('a');
+//        skrollr.menu.click(link);  
+        
+    </script>
+    
+
+</body>
+</html>
