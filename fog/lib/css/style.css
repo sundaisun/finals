@@ -1928,8 +1928,8 @@ h6 {
 
 .neigborhoodsection a {
   color: #ef7700;
-  text-decoration: underline;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: underline; }
   .neigborhoodsection a:hover {
     color: #ff9123; }
 
