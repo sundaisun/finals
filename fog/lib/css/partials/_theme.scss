@@ -350,9 +350,8 @@ h1.neighborhoodtitle{
 
 .neigborhoodsection a{
     color: $ggb-orange;
-    text-decoration:underline;
     font-weight: bold;
+    text-decoration:underline;
     &:hover {
         color: lighten($ggb-orange,10%);
-    }
-}
+}}
