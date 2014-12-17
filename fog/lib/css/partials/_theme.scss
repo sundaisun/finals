@@ -88,6 +88,7 @@ section {
     width:100%;
     background-image:url(../images/ggb.gif);
     @include bg-size(contain);
+    background-repeat:no-repeat;
 }
 
 #home .title{
