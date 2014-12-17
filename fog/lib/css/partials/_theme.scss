@@ -1,17 +1,16 @@
 html, body{
     height:5800px !important;
-    background-image:url(../images/ggb.gif);
 }
 
-#position-log{
-    position:fixed;
-    top:20px;
-    left:20px;
-    background-color:rgba(0,0,0,0.5);
-    color:white;
-    padding:20px;
-    z-index:9999;
-}
+//#position-log{
+//    position:fixed;
+//    top:20px;
+//    left:20px;
+//    background-color:rgba(0,0,0,0.5);
+//    color:white;
+//    padding:20px;
+//    z-index:9999;
+//}
 
 .project-wrap{
     position:relative;
@@ -89,6 +88,7 @@ section {
     width:100%;
     background-image:url(../images/ggb.gif);
     @include bg-size(contain);
+    background-repeat:no-repeat;
 }
 
 #home .title{
@@ -332,7 +332,7 @@ h1.neighborhoodtitle{
     margin: auto;
     position: absolute;
     top: 0%; left: 0; bottom: 0; right: 0;
-    width: 100%;
+    width: 90%;
     height: 90%;
 }
 .menu_close {
@@ -346,4 +346,13 @@ h1.neighborhoodtitle{
     text-align: center;
     color: black;
     cursor: pointer;
+}
+
+.neigborhoodsection a{
+    color: #C0362C;
+    font-weight: bold;
+    text-decoration:underline;
+    &:hover {
+        color: $ggb-orange;
+    }
 }

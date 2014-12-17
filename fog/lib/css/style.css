@@ -484,8 +484,8 @@ li.neighborhooddesc {
   color: white; }
 
 #indexicons {
-  background-color: rgba(245, 247, 250, 0.6);
-  border: 2px solid #E6E9ED;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #ef7700;
   border-radius: 75px;
   width: 50%;
   margin-left: auto;
@@ -1603,17 +1603,7 @@ h1.logo a {
     margin-left: 91.66667%;
     margin-bottom: 20px; } }
 html, body {
-  height: 5800px !important;
-  background-image: url(../images/ggb.gif); }
-
-#position-log {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 20px;
-  z-index: 9999; }
+  height: 5800px !important; }
 
 .project-wrap {
   position: relative;
@@ -1638,7 +1628,7 @@ section {
   position: relative; }
 
 .btn {
-  z-index: 900; }
+  z-index: 9999; }
 
 .text {
   margin-top: 15%;
@@ -1682,7 +1672,8 @@ section {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  background-repeat: no-repeat; }
 
 #home .title {
   width: 100%;
@@ -1934,5 +1925,12 @@ h6 {
   text-align: center;
   color: black;
   cursor: pointer; }
+
+.neigborhoodsection a {
+  color: #C0362C;
+  font-weight: bold;
+  text-decoration: underline; }
+  .neigborhoodsection a:hover {
+    color: #ef7700; }
 
 /*# sourceMappingURL=style.css.map */
