@@ -332,7 +332,7 @@ h1.neighborhoodtitle{
     margin: auto;
     position: absolute;
     top: 0%; left: 0; bottom: 0; right: 0;
-    width: 100%;
+    width: 90%;
     height: 90%;
 }
 .menu_close {
@@ -351,4 +351,8 @@ h1.neighborhoodtitle{
 .neigborhoodsection a{
     color: $ggb-orange;
     text-decoration:underline;
+    font-weight: bold;
+    &:hover {
+        color: lighten($ggb-orange,10%);
+    }
 }

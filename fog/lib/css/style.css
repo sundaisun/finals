@@ -1911,7 +1911,7 @@ h6 {
   left: 0;
   bottom: 0;
   right: 0;
-  width: 100%;
+  width: 90%;
   height: 90%; }
 
 .menu_close {
@@ -1928,6 +1928,9 @@ h6 {
 
 .neigborhoodsection a {
   color: #ef7700;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-weight: bold; }
+  .neigborhoodsection a:hover {
+    color: #ff9123; }
 
 /*# sourceMappingURL=style.css.map */
