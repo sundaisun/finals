@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Fog of San Francisco</title>
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <style>
+    html, body{
+        height:1000px !important;
+    }
+    </style>
+</head>
+<body>
+    <div id="position-log">0</div>
+    <div class="project-wrap">
+    <div class="skrollr-wrapper">
+        <section class="homeSlide innerpage" id="embarcadero-home">
+             <div class="slide-container">
+               <div class="bg-image"
+                    data-top="transform:scale(1) translateX(0px);"
+                    data-1800="transform:scale(1.1) translateX(-150px);"
+                    data-2700="transform:scale(1.2) translateX(-300px);"
+                    data-4000="transform:scale(1.4) translateX(-450px);"
+                    data-anchor-target="#embarcadero-home"
+                ><img src="../lib/images/embarcadero-inner.jpg"></div>
+                <a class="btn" href="../index.html#embarcadero"><i class="sf sf-left-arrow backicon"></i> Go Back</a>
+                <div class="content" data--100-top="opacity:0;" data-100="opacity:1";>
+                    <div class="container">
+                    <h1 class="neighborhoodtitle"><i class="sf sf-embarcadero nbhdicon"></i> The Embarcadero</h1>
+                    <div class="neighborhood">
+                    <ul class="sf-ul">
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>There is a miniature version of the Palace of Fine Arts at the California adventure amusement park.</li>
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>The Exploratorium was previously in the location of the former event hall that was built in 1969.</li>
+                    <li class="neighborhooddesc"><i class="sf-li sf sf-right-arrow sf-fw listicon"></i>The lagoon is artificial and was designed for the specific purpose of the Palace of Fine Arts.</li>
+                    </ul>
+                    </div>
+                </div> <!--closed container -->
+                </div>
+
+                <div class="content">
+                <div class="container">
+                    <div class=" col-5">
+                        <div class="col-12 neigborhoodsection">
+                            <h6><i class="sf sf-right-arrow infoicon"></i> When to Go </h6>
+                             <p> The Palace of Fine Arts is a fantastic place to hang out for an hour or more throughout the year, from sunrise to sunset. </p>
+                      
+
+                        </div>
+
+                        <div class="col-12 neigborhoodsection">
+                        <h6><i class="sf sf-right-arrow infoicon"></i> How to Get There </h6>
+                        <p> The Palace of Fine Arts Theater is located at 3301 Lyon Street in San Francisco. For directions from different parts of the Bay Area, <a href="#"> click here. </a> </p>
+                        </div>
+                        <div class="col-12 neigborhoodsection">
+                        <h6><i class="sf sf-right-arrow infoicon"></i> Where to Park </h6>
+                        <p> If you plan to drive, parking is generally available along The Embarcadero on Saturdays. There are also nearby lots, like at Bryant and The Embarcadero. Please CHECK THE METERS CAREFULLY – some are only for 2 hours at a time.</p>
+                        </div>
+                       
+                    </div>
+
+                    <div class=" col-5 offset-2 neigborhoodsection">
+                          <h6><i class="sf sf-right-arrow infoicon"></i> Public Transportation </h6>
+                        <p>  Public transportation is your best bet. Any of the Muni metro line that travel towards market street can take you to The Embaracdero. There are multiple BART stops along Market, which is also served by the F Line and other busses. For more information, call Muni at <b>415-673-6864</b> or check the <a href="#"> SFMTA trip planner.</a> </p>
+
+                        <h6><i class="sf sf-right-arrow infoicon"></i> What to bring and what to wear</h6>
+                        <p>  A picnic is a nice addition to this artsy day. Pack up some food and drink and enjoy a day in the park with the kids. Because you’ll be going inside and out, you’ll want to bring layers to be prepared for all weather conditions. Snacks and a camera are also recommended.</p>
+                    
+                        <h6><i class="sf sf-right-arrow infoicon"></i> Map</h6>
+                        <a href="#" class="toggle-map menu-bottom">Click to see this location on a map</h6></a>
+                        <div class="cbp-spmenu-bottom cbp-spmenu-horizontal cbp-spmenu-bottom cbp-spmenu">
+
+                        <div class="toggle-map menu-bottom menu_close"><i class="sf sf-down-arrow sf-fw downarrow"></i> Close Map <i class="sf sf-down-arrow sf-fw downarrow"></i></div>
+
+                        <div id="openMenu">
+                        <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Embarcadero%2C%20San%20Francisco%2C%20CA%2C%20United%20States&key=AIzaSyCrtwaD-cdZENnriJodg30mMIhQkxZOmSI"></iframe>
+                        </div>
+
+                    </div>
+                
+
+                </div><!--closed container-->
+                </div>
+
+
+                
+            </div><!--slide container-->
+        </section>
+    </div><!--scrollr-wrapper-->
+    </div><!--project wrap-->
+
+    <script src="../lib/js/jquery-1.11.1.min.js"></script>
+    <script src="../lib/js/enquire.js"></script>
+    <script src="../lib/js/skrollr.min.js"></script>
+<!--    <script src="lib/js/skrollr.menu.min.js"></script>-->
+    <script src="../lib/js/main.js"></script>
+
+    <script src="../lib/js/jPushMenu.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+      $('.toggle-map').jPushMenu();
+      });
+    </script>
+    <script>
+    // Init Skrollr
+    var s = skrollr.init(
+    {
+            render: function(data){
+                //log current scroll position
+                $('#position-log').text(data.curTop);
+            }
+        }
+    );
+
+    // Refresh Skrollr after resizing our sections
+    s.refresh($('.homeSlide'));
+        
+
+//    //Skrollr menu
+//var link = document.querySelector('a');
+//        skrollr.menu.click(link);  
+        
+    </script>
+    
+
+</body>
+</html>
