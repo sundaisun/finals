@@ -101,14 +101,7 @@
     </script>
     <script>
     // Init Skrollr
-    var s = skrollr.init(
-    {
-            render: function(data){
-                //log current scroll position
-                $('#position-log').text(data.curTop);
-            }
-        }
-    );
+    var s = skrollr.init();
 
     // Refresh Skrollr after resizing our sections
     s.refresh($('.homeSlide'));

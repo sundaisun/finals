@@ -88,11 +88,7 @@
     </div><!--project wrap-->
 
     <script src="../lib/js/jquery-1.11.1.min.js"></script>
-    <script src="../lib/js/enquire.js"></script>
     <script src="../lib/js/skrollr.min.js"></script>
-<!--    <script src="lib/js/skrollr.menu.min.js"></script>-->
-    <script src="../lib/js/main.js"></script>
-
     <script src="../lib/js/jPushMenu.js"></script>
     <script>
       jQuery(document).ready(function($) {
@@ -102,14 +98,7 @@
 
     <script>
     // Init Skrollr
-    var s = skrollr.init(
-    {
-            render: function(data){
-                //log current scroll position
-                $('#position-log').text(data.curTop);
-            }
-        }
-    );
+    var s = skrollr.init();
 
     // Refresh Skrollr after resizing our sections
     s.refresh($('.homeSlide'));
