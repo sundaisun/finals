@@ -536,7 +536,7 @@ li.neighborhooddesc {
   position: fixed;
   top: 20px;
   right: 30px;
-  z-index: 599;
+  z-index: 100599;
   color: #F5F7FA;
   background-color: #656D78;
   /*border: 2px solid #E6E9ED;*/
@@ -655,7 +655,7 @@ h1.logo a {
   width: 100%;
   height: 115px;
   top: 0px;
-  z-index: 100; }
+  z-index: 99999; }
 
 .cbp-spmenu-vertical-right {
   min-width: 100%;
